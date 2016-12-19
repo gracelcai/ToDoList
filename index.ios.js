@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Title>
+        <Title style={styles.title}>
         </Title>
         <ToDoItemList>
         </ToDoItemList>
@@ -21,9 +21,17 @@ class App extends Component {
 }
 
 const styles = StyleSheet.create({
+  title : {
+    flex: 0,
+
+    height: 5,
+  },
   container: {
     flex: 1,
-    justifyContent: 'center',
+    backgroundColor: '#ffff00',
+   paddingTop: 20,
+marginTop: 0,
+//    justifyContent: 'center',
     alignItems: 'center',
   },
 })
