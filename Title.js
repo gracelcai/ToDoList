@@ -8,7 +8,7 @@ class Title extends Component {
 
     return (
       <Text>
-        "Joyce is Stupid"
+        To Do List
       </Text>
     )
   }

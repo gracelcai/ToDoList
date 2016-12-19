@@ -4,6 +4,7 @@ import { AppRegistry, View, Text, StyleSheet } from 'react-native'
 
 
 var Title = require("./Title.js")
+var ToDoItemList = require("./ToDoItemList.js")
 
 class App extends Component {
   render() {
@@ -11,6 +12,8 @@ class App extends Component {
       <View style={styles.container}>
         <Title>
         </Title>
+        <ToDoItemList>
+        </ToDoItemList>
 
       </View>
     )
