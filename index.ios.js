@@ -28,9 +28,9 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: '#ffff00',
+    backgroundColor: '#FFD1B5',
    paddingTop: 20,
-marginTop: 0,
+   marginTop: 0,
 //    justifyContent: 'center',
     alignItems: 'center',
   },

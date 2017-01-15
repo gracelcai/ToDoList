@@ -9,26 +9,41 @@ class ToDoItemList extends Component {
 
     return (
       <View>
-      <View style={{ flexDirection: 'row' }}>
-        <Text>
-          Tofu and Ginger
-        </Text>
-        <CheckBox checked={true}
-        onPress={this._onPressButton}
-        />
-      </View>
-      <View style={{ flexDirection: 'row' }}>
-        <Text>
-          Tofu and Ginger
-        </Text>
-        <CheckBox checked={true}
-        onPress={this._onPressButton}
-        />
-      </View>
-      </View>
+          <View style={{ flexDirection: 'row', flex : 1 }}>
+              <Text>
+                Sugar Cubes
+              </Text>
+             <View style={styles.grace}>
+                <CheckBox checked={true}
+                onPress={this._onPressButton}
+                  />
+             </View>
+         </View>
+         <View style={{ flexDirection: 'row' }}>
+            <Text>
+              Stuff
+           </Text>
+           <CheckBox checked={true}
+            onPress={this._onPressButton}
+           />
+        </View>
+        <View style={{ flexDirection: 'row' }}>
+          <Text>
+            Tea
+          </Text>
+          <CheckBox checked={true}
+          onPress={this._onPressButton}
+          />
+       </View>
+     </View>
     )
   }
 }
 
+var styles = StyleSheet.create({
+  grace : {
+    marginRight: 10
+  }
+});
 
 module.exports = ToDoItemList
